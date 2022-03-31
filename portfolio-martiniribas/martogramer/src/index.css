@@ -26,11 +26,13 @@ code {
   }
 
   :root {
+    --color-btn-uno: rgba(0, 17, 17, 0.789);
     --color-bg: #011;
     --color-bg-variant: #135;
     --color-primary: #456;
     --color-primary-variant: #077;
     --color-white: #fff;
+    --color-white: rgba(255, 255, 255, 0.747);
     --color-light: #rgba(255, 255, 255, 0.5);
 
     --transition: all 400ms ease;
@@ -103,8 +105,8 @@ a:hover{
   border-color: transparent;
 }
 .btn-primary{
-  background: var(--color-primary);
-  color: var(--color-bg-);
+  background: var(--color-btn-uno);
+  color: var(--color-primary);
 }
 img{
   display: block;
