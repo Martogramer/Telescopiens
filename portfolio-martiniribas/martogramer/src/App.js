@@ -7,9 +7,10 @@ import Nav from './components/nav/Nav'
 import About from './components/about/About'
 import Exp from './components/exp/Exp'
 import Portfolio from './components/portfolio/Portfolio'
-import Reseñas from './components/portfolio/Portfolio'
+import Reseñas from './components/reseñas/Reseñas'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import Services from './components/services/Services'
 
 function App() {
     return (
@@ -18,8 +19,9 @@ function App() {
             <Header />
             <Nav />
             <About />
-            <Exp />
             <Portfolio />
+            <Exp />
+            <Services />
             <Reseñas />
             <Contact />
             <Footer />
