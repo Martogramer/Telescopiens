@@ -60,7 +60,7 @@
     },
     "move": {
       "enable": true,
-      "speed": 2,
+      "speed": 1,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -83,7 +83,7 @@
       "value": 0.1,
       "random": false,
       "anim": {
-        "enable": true,
+        "enable": false,
         "speed": 0.6393606393606394,
         "opacity_min": 0.1,
         "sync": false
