@@ -3,7 +3,7 @@ import './reseñas.css'
 
 const Res = () => {
     return(
-        <div>Res</div>
+        <section>Reseñas</section>
         ) 
         
 };
