@@ -49,7 +49,7 @@
       "value": "#ffffff"
     },
     "links": {
-      "color": "#ffffff",
+      "color": "rgb(121, 141, 255)",
       "distance": 234,
       "enable": true,
       "opacity": 0.3,
