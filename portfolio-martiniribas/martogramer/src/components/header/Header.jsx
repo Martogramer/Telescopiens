@@ -12,7 +12,7 @@ const Header = () => {
                 
                 <div className="header__columns">
                     <div className="na">
-                        <h5>Hola soy</h5>
+                        <h5>Hola 👋, soy</h5>
                         <h1>Martin</h1>
                         <h5 className="text-light">Fullstack Developer</h5>
                         <CTA />
