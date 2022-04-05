@@ -17,8 +17,9 @@ function App() {
         <div className="App">
             <Particles options={particlesOptions}/>
             <Header />
-            <Nav />
             <About />
+            <Nav />
+
             <Portfolio />
             <Exp />
             <Services />
