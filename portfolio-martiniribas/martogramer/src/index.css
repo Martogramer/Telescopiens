@@ -29,7 +29,7 @@ code {
     --color-btn-uno: rgba(0, 17, 17, 0.789);
     --color-bg: #011;
     --color-bg-variant: rgba(17, 51, 85, 0.486);
-    --color-primary: rgba(68, 85, 102, 0.589);
+    --color-primary: rgba(0, 59, 117, 0.589);
     --color-primary-variant: #077;
     --color-white: #fff;
     --color-white: rgba(255, 255, 255, 0.747);
@@ -69,8 +69,7 @@ h1{
   font-size: 2.5 rem;
 }
 section{
-  margin-top: 8rem;
-  height: 100vh;
+  height: 60vh;
 }
 section > h2, section > h5{
   text-align: center;
