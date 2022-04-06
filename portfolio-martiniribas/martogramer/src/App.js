@@ -11,21 +11,13 @@ import Reseñas from './components/reseñas/Reseñas'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import Services from './components/services/Services'
+import Port from './components/Port'
 
 function App() {
     return (
         <div className="App">
             <Particles options={particlesOptions}/>
-            <Header />
-            <About />
-            <Nav />
-
-            <Portfolio />
-            <Exp />
-            <Services />
-            <Reseñas />
-            <Contact />
-            <Footer />
+            <Port />
         </div>
     );
 }
