@@ -1,0 +1,99 @@
+.container_{
+    margin: 10%;
+    margin-top: 15rem;
+    border: 1px solid #fff; 
+    border-radius: 1rem;
+    background-color: #011;
+}
+
+
+/* ------------------------ Header -------- */
+
+
+.header {
+
+}
+
+
+.foto{
+    background: linear-gradient(rgb(0, 59, 117), rgba(0, 17, 17, 0.849));
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    transform: translateY(-5rem);
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.oto {
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+
+/* ------------------------ About ----------------- */
+
+
+.about-hola{
+    position: relative;
+    text-align: center;
+    margin-top: 6rem;
+}
+.about{
+    border: 1px solid rgb(19, 179, 91); 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.skills{
+    border: 1px solid rgb(179, 68, 68);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.charla{
+    text-align: left;
+    
+}
+
+
+/* ------ Portfolio --------- */
+
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin: 2rem;
+    border: 1px solid #fff;
+}
+.portfolio-titulo{
+    margin-top: 4rem;
+}
+.items {
+    background: var(--color-bg-variant);
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.items h3{
+    margin-top: 1rem;
+}
+.items:hover{
+    border-color: var(--color-primary);
+    background: transparent;
+}
+.cuadro{
+    display:flex;
+    gap:1rem;
+    margin:1rem;
+}
+
+.items-img img{
+    border-radius: 1rem 1rem 0 0;
+}
