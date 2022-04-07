@@ -1,22 +1,20 @@
 .container_{
     margin: 10%;
-    margin-top: 15rem;
-    border: 1px solid #fff; 
+    margin-top: 13rem;
+    box-shadow: 1rem 1rem 2rem 0.5rem rgba(0, 0, 0, 0.157);
     border-radius: 1rem;
-    background-color: #011;
+    
+    background-color: #fff;
 }
 
 
 /* ------------------------ Header -------- */
 
 
-.header {
-
-}
 
 
 .foto{
-    background: linear-gradient(rgb(0, 59, 117), rgba(0, 17, 17, 0.849));
+    background: linear-gradient(rgb(0, 59, 117), rgb(0, 17, 17));
     width: 10rem;
     height: 10rem;
     position: relative;
@@ -24,12 +22,6 @@
     display: inline-block;
     overflow: hidden;
     border-radius: 50%;
-}
-
-.oto {
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
 }
 
 
@@ -87,13 +79,54 @@
 .items:hover{
     border-color: var(--color-primary);
     background: transparent;
+    
 }
 .cuadro{
     display:flex;
-    gap:1rem;
+    gap:0.5rem;
     margin:1rem;
 }
 
-.items-img img{
+.items-img{
     border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    transition: all 10s ease;
 }
+.items-img:hover {
+    transform: traslateX(-10rem)
+}
+
+
+
+/* ----------- NAV ------------- */
+
+.navetones {
+    background: transparent;
+    backdrop-filter: blur(15px);
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    position: fixed;
+    overflow: hidden;
+    padding: 1.5rem;
+    top: 0;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+.nodriza a{
+    padding: 0.6rem 0.6rem 0.3rem 0.6rem;
+    color: rgb(28, 28, 28);
+    position: relative;
+    left: 1rem;
+    margin: 0.5rem;
+    
+}
+.nodriza a:hover{
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border-radius: 50%;
+}
+
+
+
+
