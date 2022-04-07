@@ -1,7 +1,7 @@
 {
   "background": {
     "color": {
-      "value": "#011"
+      "value": "rgb(208, 208, 208)"
     }
   },
   "fpsLimit": 120,
@@ -46,14 +46,14 @@
   
   "particles": {
     "color": {
-      "value": "#ffffff"
+      "value": "rgba(0, 59, 117, 0.836)"
     },
     "links": {
-      "color": "rgb(121, 141, 255)",
+      "color": "rgba(0, 59, 117, 0.836)",
       "distance": 234,
       "enable": true,
       "opacity": 0.3,
-      "width": 0.6
+      "width": 0.9
     },
     "collisions": {
       "enable": true
@@ -102,5 +102,5 @@
     }
   },
   
-  "detectRetina": true
+  "detectRetina": false
 }
