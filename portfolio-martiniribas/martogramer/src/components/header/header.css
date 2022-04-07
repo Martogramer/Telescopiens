@@ -1,8 +1,4 @@
-header {  
-    height: 120vh;
-    padding-top: 5rem;
-    overflow: hidden;
-}
+
 
 .header__container{
     text-align: center;
@@ -28,16 +24,8 @@ header {
     position: absolute;
     left: 0;
     bottom: 20rem;
-}:hover{
-    color: rgb(199, 223, 223);
 }
 
-.header__socials::after {
-    content: "";
-    width: 1px;
-    height: 4rem;
-    background: var(--color-primary);
-}
 
 /* -------- ME ----------- */
 .me {
