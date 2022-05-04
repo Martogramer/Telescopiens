@@ -1,17 +1,30 @@
 .container_{
-    margin: 10%;
-    margin-top: 13rem;
+    display: block;
+    margin: 5%;
+    margin-top: 10rem;
+    margin-bottom: 13rem;
     box-shadow: 1rem 1rem 2rem 0.5rem rgba(0, 0, 0, 0.157);
     border-radius: 1rem;
-    
+    width: 90%;
     background-color: #fff;
+    text-align: center;
 }
 
 
 /* ------------------------ Header -------- */
+.header{
+    display: inline-block;
+    width:70%;
+    position: relative;
+    
+}
 
-
-
+.cta {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
 
 .foto{
     background: linear-gradient(rgb(0, 59, 117), rgb(0, 17, 17));
@@ -23,35 +36,49 @@
     overflow: hidden;
     border-radius: 50%;
 }
+.pl{
+    padding: 2REM 10PX;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
+.pl-texts{
+    width: 75%;
+}
 
 
 /* ------------------------ About ----------------- */
 
-
-.about-hola{
-    position: relative;
+.about{
     text-align: center;
-    margin-top: 6rem;
+    
 }
 .about{
-    border: 1px solid rgb(19, 179, 91); 
+    position: relative;
     display: grid;
+    left: 10%;
+    border-radius: 0.3rem;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 2rem;
+    margin-top: 3rem;
+    width: 80%;
     gap: 1rem;
     padding: 1rem;
 }
 
 .skills{
-    border: 1px solid rgb(179, 68, 68);
     display: grid;
+    background-color: rgba(113, 134, 163, 0.532);
+    border-radius: 0.3rem;
+    padding-top: 1rem;
     grid-template-columns: repeat(3, 1fr);
 }
 .charla{
     text-align: left;
     
 }
+
 
 
 /* ------ Portfolio --------- */
@@ -68,7 +95,6 @@
     margin-top: 4rem;
 }
 .items {
-    background: var(--color-bg-variant);
     border-radius: 1rem;
     border: 1px solid transparent;
     transition: var(--transition);
@@ -96,8 +122,6 @@
     transform: traslateX(-10rem)
 }
 
-
-
 /* ----------- NAV ------------- */
 
 .navetones {
@@ -106,12 +130,15 @@
     width: 100%;
     height: 4rem;
     display: flex;
+    justify-content: space-between;
     position: fixed;
-    overflow: hidden;
+    overflow:hidden;
     padding: 1.5rem;
     top: 0;
     gap: 1rem;
     padding-bottom: 2rem;
+    z-index: 100;
+    
 }
 .nodriza a{
     padding: 0.6rem 0.6rem 0.3rem 0.6rem;
@@ -129,4 +156,39 @@
 
 
 
+@media screen and (max-width: 1080px) {
+    
+    .container_{
+        width: var(--container-width-md);
+        margin: 7%;
+        margin-top: 13rem;
+        margin-bottom: 13rem;
+    }
+    .portfolio-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    }
+
+@media screen and (max-width: 600px) {
+    .container_{
+        width: var(--container-width-sm);
+        margin: 5%;
+        margin-top: 13rem;
+        margin-bottom: 10rem;
+    }
+    .portfolio-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .pl{
+        padding: 2REM 0.3REM;
+    }
+    .pl-texts{
+        width: 90%;
+    }
+}
 

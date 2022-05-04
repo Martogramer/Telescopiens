@@ -1,0 +1,423 @@
+:root {
+  --text-color: #111;
+  --bg-color: #000000;
+  --colorr: #031e21;
+}
+.textshadow{
+  text-shadow: 10px 10px 20px rgb(0, 0, 0);
+}
+.titleshadow{
+  text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.535);
+}
+.boxshadowlight{
+  text-shadow: 7px 1px 3px rgba(255, 247, 247, 0.186);
+}
+.reveslight{
+  text-shadow: 7px 1px 3px #0b48549f;
+  
+}
+.pointer{
+  cursor: pointer;
+}
+body {
+  font-family: termina, sans-serif;
+  color: var(--text-color);
+  background: var(--bg-color);
+  transition: 0.3s ease-out;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  overscroll-behavior: none;
+}
+section:not(.horizontal-scroll) {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  padding: 50px 10vw;
+  margin: auto;
+  place-items: center;
+}
+img {
+  max-height: 60vh;
+  width: auto;
+}
+.dosimg{
+  max-width: 400px;
+}
+.unoimg{
+  height: 30vh;
+}
+.marto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mart{
+  margin-left: -35rem;
+}
+h5{
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: 600;
+}
+h1 {
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  position: absolute;
+  top: 10vw;
+  left: 10vw;
+  z-index: 4;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+
+h1 span {
+  display: block;
+}
+
+h2 {
+  font-size: 2rem;
+  max-width: 400px;
+}
+h3{
+  font-size: 1rem;
+  position: relative;
+}
+.caso{
+  display: flex;
+  justify-content: flex-end;
+  right: -200px;
+}
+.credit {
+  font-family: Termina, sans-serif;
+}
+.credit a {
+  color: var(--text-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.horizontal-scroll {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  left: 0;
+}
+
+.pin-wrap {
+  height: 80vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 10vw;
+}
+.pin-wrap > * {
+  min-width: 60vw;
+  padding: 0 5vw;
+}
+.data-p-uno {
+  position: absolute;
+  bottom: 10vw;
+  right: 10vw;
+  width: 300px;
+  line-height: 1.5;
+}
+.data-p-dos {
+  position: absolute;
+  bottom: 13vw;
+  right: 18vw;
+  width: 300px;
+  line-height: 1.5;
+}
+
+/*! locomotive-scroll v3.5.4 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+html.has-scroll-smooth {
+  overflow: hidden;
+}
+
+html.has-scroll-dragging {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.has-scroll-smooth body {
+  overflow: hidden;
+}
+
+.has-scroll-smooth [data-scroll-container] {
+  min-height: 100vh;
+}
+
+.c-scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 11px;
+  height: 100vh;
+  transform-origin: center right;
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0;
+}
+
+.c-scrollbar:hover {
+  transform: scaleX(1.45);
+}
+
+.c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
+  opacity: 1;
+}
+
+.c-scrollbar_thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.5;
+  width: 7px;
+  border-radius: 10px;
+  margin: 2px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.has-scroll-dragging .c-scrollbar_thumb {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+
+
+/* //////////////  
+IMG - HEADER
+///////// */
+
+.delayed-section {
+  position: absolute;
+  width: 30vw;
+  height: 38.87vw;
+}
+.delayed-section .innerCont {
+  will-change: transform;
+}
+.delayed-section img {
+  max-width: 100%;
+  will-change: transform;
+}
+
+#del1 {
+  top: 105vh;
+  left: 60vw;
+}
+
+
+
+/* //////////////////
+
+----MEDIA-QUERYS-------
+
+/////////////////////// */
+
+@media (max-width: 1199.98px) {
+  h1 span {
+    display: block;
+    
+  }
+  
+.mart{
+  margin-left: -25rem;
+}
+  h2 {
+    font-size: 2rem;
+    max-width: 400px;
+  }
+  h3{
+    font-size: 1rem;
+    position: relative;
+  }
+  h5{
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 600;
+  }
+  
+  h1 {
+    font-size: 5rem;
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    position: absolute;
+    top: 10vw;
+    left: 10vw;
+    z-index: 4;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+  .data-p-uno {
+    position: absolute;
+    bottom: 10vw;
+    right: 10vw;
+    width: 300px;
+    line-height: 1.5;
+  }
+  .data-p-dos {
+    position: absolute;
+    bottom: 18vw;
+    right: 5vw;
+    width: 300px;
+    line-height: 1.5;
+  }
+  .delayed-section {
+    position: absolute;
+    width: 30vw;
+    height: 38.87vw;
+  }
+  .delayed-section .innerCont {
+    will-change: transform;
+  }
+  .delayed-section img {
+    max-width: 100%;
+    will-change: transform;
+  }
+  
+  #del1 {
+    top: 105vh;
+    left: 60vw;
+  }
+  img {
+    max-height: 80vh;
+    width: auto;
+  }
+  .dosimg{
+    max-width: 400px;
+  }
+  .unoimg{
+    max-width: 50px;
+  }
+
+}
+
+/*Pantallas medianas (tablets de menos de 992px)*/
+
+@media (max-width: 991.98px) {
+  
+  .mart{
+    margin-left: -15rem;
+  }
+}
+@media (max-width: 491.98px) {
+  section{
+    height:5vh;
+  }
+  .m
+  .mart{
+    margin-left: -15rem;
+  }
+  .data-p-uno {
+    position: relative;
+    bottom: 1rem;
+    right: 10vw;
+    width: 300px;
+    line-height: 1.5;
+  }
+}
+
+/*/Pantallas pequeñas (móviles en landscape de menos de 768px) */
+@media (max-width: 767.98px) {
+  section{
+    height:40vh;
+  }
+  .marto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mart{
+    margin-left: -15rem;
+  }
+  h1 span {
+    display: block;
+    
+  }
+  
+  h2 {
+    font-size: 2rem;
+    max-width: 400px;
+  }
+  h3{
+    font-size: 1rem;
+    position: relative;
+  }
+  h5{
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 600;
+
+  }
+  
+  h1 {
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    position: absolute;
+    top: 12vw;
+    left: 14vw;
+    z-index: 4;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+  .data-p-uno {
+    position: absolute;
+    bottom: 40vw;
+    right: 10vw;
+    width: 300px;
+    line-height: 1.5;
+  }
+  .data-p-dos {
+    position: absolute;
+    bottom: 30vw;
+    right: 6vw;
+    width: 300px;
+    line-height: 1.5;
+  }
+  .delayed-section {
+    position: absolute;
+    width: 50vw;
+    height: 38.87vw;
+  }
+  .delayed-section .innerCont {
+    will-change: transform;
+  }
+  .delayed-section img {
+    max-width: 100%;
+    will-change: transform;
+  }
+  
+  #del1 {
+    top: 105vh;
+    left: 60vw;
+  }
+  img {
+    max-height: 80vh;
+    width: auto;
+  }
+  .dosimg{
+    max-width: 400px;
+  }
+  .unoimg{
+    max-width: 50px;
+  }
+}
+/* 
+//Pantallas muy pequeñas (móviles en portrait de menos de 576px) */
+@media (max-width: 575.98px) {}
