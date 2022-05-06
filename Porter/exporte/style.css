@@ -62,6 +62,8 @@ h5{
   font-size: 5rem;
   line-height: 1;
   font-weight: 600;
+  position: absolute;
+  z-index: 1;
 }
 h1 {
   font-size: 5rem;
@@ -75,12 +77,9 @@ h1 {
   overflow-wrap: break-word;
   hyphens: auto;
 }
-
-
 h1 span {
   display: block;
 }
-
 h2 {
   font-size: 2rem;
   max-width: 400px;
@@ -125,8 +124,8 @@ h3{
 }
 .data-p-uno {
   position: absolute;
-  bottom: 10vw;
-  right: 10vw;
+  bottom: 20vw;
+  right: 38vw;
   width: 300px;
   line-height: 1.5;
 }
@@ -134,7 +133,7 @@ h3{
   position: absolute;
   bottom: 13vw;
   right: 18vw;
-  width: 300px;
+  width: 500px;
   line-height: 1.5;
 }
 
@@ -189,13 +188,10 @@ html.has-scroll-dragging {
   cursor: -webkit-grab;
   cursor: grab;
 }
-
 .has-scroll-dragging .c-scrollbar_thumb {
   cursor: -webkit-grabbing;
   cursor: grabbing;
 }
-
-
 
 /* //////////////  
 IMG - HEADER
@@ -215,7 +211,7 @@ IMG - HEADER
 }
 
 #del1 {
-  top: 105vh;
+  top: 20vh;
   left: 60vw;
 }
 
@@ -225,7 +221,7 @@ IMG - HEADER
 
 ----MEDIA-QUERYS-------
 
-/////////////////////// */
+/////////////////////// *//* 
 
 @media (max-width: 1199.98px) {
   h1 span {
@@ -248,6 +244,8 @@ IMG - HEADER
     font-size: 4rem;
     line-height: 1;
     font-weight: 600;
+    position: absolute;
+    z-index: 1;
   }
   
   h1 {
@@ -280,6 +278,7 @@ IMG - HEADER
     position: absolute;
     width: 30vw;
     height: 38.87vw;
+    z-index: 0;
   }
   .delayed-section .innerCont {
     will-change: transform;
@@ -305,20 +304,65 @@ IMG - HEADER
   }
 
 }
-
+ */
 /*Pantallas medianas (tablets de menos de 992px)*/
 
 @media (max-width: 991.98px) {
+  section:not(.horizontal-scroll) {
+    min-height: 50vh;
+  }
+  h1 {
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    position: absolute;
+    top: 12vw;
+    left: 24vw;
+    z-index: 4;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+  h5{
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 600;
+    position: absolute;
+    z-index: 1;
+  }
+  .marto{
+    
+  }
+  .data-p-uno {
+    position: absolute;
+    bottom: 80vw;
+    right: 5vw;
+    width: 300px;
+    line-height: 1.5;
+  }
+  .data-p-dos {
+    position: absolute;
+    bottom: 60vw;
+    right: 10vw;
+    width: 300px;
+    line-height: 1.5;
+  }
+  .delayed-section {
+    position: absolute;
+    width: 40vw;
+    height: 38.87vw;
+    z-index: 0;
+  }
+  #del1 {
+    top: 18vh;
+    left: 50vw;
+  }
   
-  .mart{
-    margin-left: -15rem;
-  }
 }
-@media (max-width: 491.98px) {
+/* @media (max-width: 491.98px) {
   section{
-    height:5vh;
+    height:20vh;
   }
-  .m
   .mart{
     margin-left: -15rem;
   }
@@ -329,10 +373,10 @@ IMG - HEADER
     width: 300px;
     line-height: 1.5;
   }
-}
+} */
 
 /*/Pantallas pequeñas (móviles en landscape de menos de 768px) */
-@media (max-width: 767.98px) {
+/* @media (max-width: 767.98px) {
   section{
     height:40vh;
   }
@@ -361,8 +405,8 @@ IMG - HEADER
     font-size: 3rem;
     line-height: 1;
     font-weight: 600;
-
   }
+
   
   h1 {
     font-size: 3rem;
@@ -417,7 +461,6 @@ IMG - HEADER
   .unoimg{
     max-width: 50px;
   }
-}
+} */
 /* 
 //Pantallas muy pequeñas (móviles en portrait de menos de 576px) */
-@media (max-width: 575.98px) {}
