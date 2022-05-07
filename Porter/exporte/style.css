@@ -40,15 +40,20 @@ section:not(.horizontal-scroll) {
   margin: auto;
   place-items: center;
 }
+div.contact {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  padding: 50px 10vw;
+  margin: auto;
+  place-items: center;
+}
 img {
   max-height: 60vh;
   width: auto;
-}
-.dosimg{
-  max-width: 400px;
-}
-.unoimg{
-  height: 30vh;
 }
 .marto {
   display: flex;
@@ -99,18 +104,15 @@ h3{
 .credit a {
   color: var(--text-color);
 }
-
 * {
   box-sizing: border-box;
 }
-
 .horizontal-scroll {
   height: 100vh;
   overflow: hidden;
   display: flex;
   left: 0;
 }
-
 .pin-wrap {
   height: 80vh;
   display: flex;
@@ -136,27 +138,22 @@ h3{
   width: 500px;
   line-height: 1.5;
 }
-
 /*! locomotive-scroll v3.5.4 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 html.has-scroll-smooth {
   overflow: hidden;
 }
-
 html.has-scroll-dragging {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
-
 .has-scroll-smooth body {
   overflow: hidden;
 }
-
 .has-scroll-smooth [data-scroll-container] {
   min-height: 100vh;
 }
-
 .c-scrollbar {
   position: absolute;
   right: 0;
@@ -167,15 +164,12 @@ html.has-scroll-dragging {
   transition: transform 0.3s, opacity 0.3s;
   opacity: 0;
 }
-
 .c-scrollbar:hover {
   transform: scaleX(1.45);
 }
-
 .c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
   opacity: 1;
 }
-
 .c-scrollbar_thumb {
   position: absolute;
   top: 0;
@@ -192,146 +186,69 @@ html.has-scroll-dragging {
   cursor: -webkit-grabbing;
   cursor: grabbing;
 }
-
 /* //////////////  
 IMG - HEADER
 ///////// */
-
 .delayed-section {
   position: absolute;
   width: 30vw;
   height: 38.87vw;
 }
-.delayed-section .innerCont {
+.delayed-section .innerContainer {
   will-change: transform;
 }
 .delayed-section img {
   max-width: 100%;
   will-change: transform;
 }
-
 #del1 {
   top: 20vh;
   left: 60vw;
 }
-
-
-
-/* //////////////////
-
-----MEDIA-QUERYS-------
-
-/////////////////////// *//* 
-
-@media (max-width: 1199.98px) {
-  h1 span {
-    display: block;
-    
-  }
-  
-.mart{
-  margin-left: -25rem;
-}
-  h2 {
-    font-size: 2rem;
-    max-width: 400px;
-  }
-  h3{
-    font-size: 1rem;
-    position: relative;
-  }
-  h5{
-    font-size: 4rem;
-    line-height: 1;
-    font-weight: 600;
-    position: absolute;
-    z-index: 1;
-  }
-  
-  h1 {
-    font-size: 5rem;
-    line-height: 1;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    position: absolute;
-    top: 10vw;
-    left: 10vw;
-    z-index: 4;
-    overflow-wrap: break-word;
-    hyphens: auto;
-  }
-  .data-p-uno {
-    position: absolute;
-    bottom: 10vw;
-    right: 10vw;
-    width: 300px;
-    line-height: 1.5;
-  }
-  .data-p-dos {
-    position: absolute;
-    bottom: 18vw;
-    right: 5vw;
-    width: 300px;
-    line-height: 1.5;
-  }
-  .delayed-section {
-    position: absolute;
-    width: 30vw;
-    height: 38.87vw;
-    z-index: 0;
-  }
-  .delayed-section .innerCont {
-    will-change: transform;
-  }
-  .delayed-section img {
-    max-width: 100%;
-    will-change: transform;
-  }
-  
-  #del1 {
-    top: 105vh;
-    left: 60vw;
-  }
-  img {
-    max-height: 80vh;
-    width: auto;
-  }
-  .dosimg{
-    max-width: 400px;
-  }
-  .unoimg{
-    max-width: 50px;
-  }
-
-}
- */
-/*Pantallas medianas (tablets de menos de 992px)*/
-
 @media (max-width: 991.98px) {
   section:not(.horizontal-scroll) {
     min-height: 50vh;
   }
-  h1 {
+  .container{
+    margin-top: 30rem;
+  }
+  .uno{
+  padding-bottom: 23rem;
+  }
+  span{
+    font-size: 6rem;
+  }
+  h2 {
+    max-width: 900px;
+  }
+  h3{
     font-size: 3rem;
+    width:600px;
+    position: relative;
+  }
+  h1 {
+    font-size: 6rem;
     line-height: 1;
-    font-weight: 600;
+    font-weight: 900;
     margin-bottom: 1rem;
     position: absolute;
     top: 12vw;
-    left: 24vw;
+    left: 0;
     z-index: 4;
     overflow-wrap: break-word;
     hyphens: auto;
   }
   h5{
-    font-size: 4rem;
+    font-size: 6rem;
     line-height: 1;
     font-weight: 600;
     position: absolute;
     z-index: 1;
   }
   .marto{
-    
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
   .data-p-uno {
     position: absolute;
@@ -342,38 +259,45 @@ IMG - HEADER
   }
   .data-p-dos {
     position: absolute;
-    bottom: 60vw;
-    right: 10vw;
-    width: 300px;
+    font-size: 2rem;
+    bottom: 30vw;
+    right: 7vw;
+    width: 800px;
     line-height: 1.5;
   }
   .delayed-section {
     position: absolute;
-    width: 40vw;
-    height: 38.87vw;
-    z-index: 0;
+    width: 90vw;
+    height: 60vw;
+  }
+  img {
+    min-height: 20vh;
+    width: auto;
   }
   #del1 {
-    top: 18vh;
-    left: 50vw;
+    top: 20%;left: 39vw;
   }
-  
+  .imgproj1{
+    width: 60vh;
+  }
+  .imgproj2{
+    width: 25vh;
+  }
+  .imgproj3{
+    width: 25vh;
+  }
+  .imgproj4{
+    width: 50vh;
+  }
+
+  #footerton{
+      bottom: 22vh;
+      left: 7vw;
+  }
 }
-/* @media (max-width: 491.98px) {
-  section{
-    height:20vh;
-  }
-  .mart{
-    margin-left: -15rem;
-  }
-  .data-p-uno {
-    position: relative;
-    bottom: 1rem;
-    right: 10vw;
-    width: 300px;
-    line-height: 1.5;
-  }
-} */
+@media (max-width: 491.98px) {
+
+}
 
 /*/Pantallas pequeñas (móviles en landscape de menos de 768px) */
 /* @media (max-width: 767.98px) {
