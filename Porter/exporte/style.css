@@ -3,6 +3,50 @@
   --bg-color: #000000;
   --colorr: #031e21;
 }
+
+.head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw 2.5vw;
+  pointer-events: none;
+  z-index: 1000;
+}
+.head>div {
+  display: flex;
+}
+.head a {
+  position: relative;
+  color: rgb(13, 21, 25);
+  text-decoration: none;
+  font-size: 1.5rem;
+  pointer-events: all;
+  overflow: hidden;
+}
+.head a div,
+.head a:after {
+  transition: transform 0.85s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.head a:after {
+  content: attr(data-txt);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgb(52, 88, 96);
+}
+.head a:nth-child(2) {
+  margin-left: 2vw;
+}
+.head a:hover div,
+.head a:hover:after {
+  transform: translateY(-100%);
+}
+
 .textshadow{
   text-shadow: 10px 10px 20px rgb(0, 0, 0);
 }
@@ -71,7 +115,7 @@ h5{
   z-index: 1;
 }
 h1 {
-  font-size: 5rem;
+  font-size: 7rem;
   line-height: 1;
   font-weight: 800;
   margin-bottom: 1rem;
@@ -90,7 +134,7 @@ h2 {
   max-width: 400px;
 }
 h3{
-  font-size: 1rem;
+  font-size: 1.3rem;
   position: relative;
 }
 .caso{
@@ -133,10 +177,12 @@ h3{
 }
 .data-p-dos {
   position: absolute;
-  bottom: 13vw;
-  right: 18vw;
+  right: 25%;
+  top: 100vh;
+  font-size: 1.3rem;
   width: 500px;
   line-height: 1.5;
+
 }
 /*! locomotive-scroll v3.5.4 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 html.has-scroll-smooth {
@@ -206,6 +252,9 @@ IMG - HEADER
   left: 60vw;
 }
 @media (max-width: 991.98px) {
+  .head{
+    display: none;
+  }
   section:not(.horizontal-scroll) {
     min-height: 50vh;
   }
@@ -222,7 +271,7 @@ IMG - HEADER
     max-width: 900px;
   }
   h3{
-    font-size: 3rem;
+    font-size: 2.4rem;
     width:600px;
     position: relative;
   }
@@ -259,10 +308,10 @@ IMG - HEADER
   }
   .data-p-dos {
     position: absolute;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    width: 900px;
     bottom: 30vw;
-    right: 7vw;
-    width: 800px;
+    left: 7vw;
     line-height: 1.5;
   }
   .delayed-section {
