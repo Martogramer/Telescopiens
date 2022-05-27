@@ -9,14 +9,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel='stylesheet' href='https://use.typekit.net/skn8ash.css'>
     <link rel="stylesheet" href="./style.css">
-
 </head>
 
 <body>
     <!-- partial:index.partial.html -->
-    <div id="root"></div>
     <div class="container">
-        
+    <header class="head">
+        <div>
+            <a href="#about" data-txt="about">
+                <div>about</div>
+            </a>
+            <a href="#contact" data-txt="contact">
+                <div>contact</div>
+            </a>
+        </div>
+    </header>
         <div class="uno">
             <section data-textcolor="#032f35" data-bgcolor="#d4fef2">
                 <div class="">
@@ -33,6 +40,12 @@
                     <img width="575" src="https://picsum.photos/575/745?index=1" alt="">
                 </div>
             </div>
+            
+            <p class="data-p-dos textshadow" data-scroll data-scroll-speed="2" data-scroll-delay="0.2">
+                Diseño Responsive. UX/UI. Experiencia de Usuario. Soluciones de Software
+            </p>
+
+
         </section>
         </div>
         
@@ -54,9 +67,6 @@
                         Projects
                     </span>
                 </h1>
-                <p class="data-p-dos textshadow" data-scroll data-scroll-speed="2" data-scroll-delay="0.2">
-                    Diseño Responsive. UX/UI. Experiencia de Usuario. Soluciones de Software
-                </p>
             </div>
         </section>
 
@@ -70,10 +80,9 @@
 -->
 
         <section data-textcolor="#d4fef2" data-bgcolor="#031e21">
-            <img class="imgproj1" src="./mobile.png" alt="" />
+            <img class="imgproj1" src="./img/mobile.png" alt="" />
             <h3 class="textshadow" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1">
-                UNO This should be a pink backgroun Esto puede cambiar a h3 tranqui, y poner
-                mas contenido. quizas un pin de skill
+                Aplicacion Web bienes raices. Template full responsive con Gulp.js, Sass, JavaScript.
             </h3>
         </section>
 
@@ -82,38 +91,35 @@
         
         <section data-textcolor="#d4fef2" data-bgcolor="#031e21">
             <h3 class="textshadow" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1">
-                TRES This should be a pink backgroun Esto puede cambiar a h3 tranqui, y poner
-                mas contenido. quizas un pin de skill
+                NFTs Marketplace. Creada con React Native.
             </h3>
-            <img class="dosimg imgproj3" src="./mobileCoin.png" alt="" />
+            <img class="dosimg imgproj3" src="./img/mobileCoin.png" alt="" />
         </section>
         
         <section data-textcolor="#d4fef2" data-bgcolor="#031e21">
-            <img class="mobiletres imgproj4" src="./mobile4.png" alt="" />
+            <img class="mobiletres imgproj4" src="./img/mobile4.png" alt="" />
             <div>
                 <h3 class="textshadow" data-scroll data-scroll-direction="horizontal" data-scroll-speed="3">
-                    CUATRO This whole horizontal section<br /> should be brownhis whole<br />
-                    horizontal section should be brown<br />
+                    Landing Page presentacion de NFTs App <br />creada con React.js y Tailwind<br />
+                    <br />
                 </h3>
             </div>
         </section>
         <section data-textcolor="#d4fef2" data-bgcolor="#031e21">
-            <img class="imgproj2" src="./mobile2.png" alt="" />
+            <img class="imgproj2" src="./img/mobile2.png" alt="" />
             <h3 class="textshadow" data-scroll data-scroll-direction="horizontal" data-scroll-speed="3">
-                DOS This should be a pink backgroun Esto puede cambiar a h3 tranqui, y poner
-                mas contenido. quizas un pin de skill
+                Shiny Coins es una REST Api que muestra datos de criptomonedas en tiempo real. Creada con React.js, Bootstrap, Node.js y Axios
             </h3>
         </section>
         
-        <div class="contact" data-textcolor="#032f35" data-bgcolor="#f4583a">
+        <div class="contact" id="contact" data-textcolor="#032f35" data-bgcolor="#f4583a">
             <div class="boxshadowlight">
                 <h2 data-scroll data-scroll-speed="1">
                     <span>
-                        This should be a light cream background. Un poco de about. Skillls
+                        Estos son algunos de los proyectos en los que estuve trabajando recientemente. Si te gusto podes conocer mas en
                     </span>
                 </h2>
                 <a class="pointer">
-                        
                     https://github.com/Martogramer
                 </a><br />
                 <a class="pointer">
@@ -124,8 +130,8 @@
 
 
 
-        <div class="contact" id="footerton" data-bgcolor="#d4fef2" data-textcolor="#032f35">
-            <img src="https://images.pexels.com/photos/4791474/pexels-photo-4791474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        <div class="contact" id="footerton about" data-bgcolor="#d4fef2" data-textcolor="#032f35">
+            <!-- <img src="&dpr=1&w=500" -->
                 alt="" />
             <h2 data-scroll data-scroll-speed="1">
                 This should be a light cream background
