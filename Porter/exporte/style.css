@@ -3,7 +3,20 @@
   --bg-color: #000000;
   --colorr: #031e21;
 }
-
+.skills{
+  display: flex;
+  justify-content: space-between;
+}
+.martincho{
+  filter: grayscale(1);
+}
+.skills img{
+  max-width: 4rem;
+}
+.github img{
+  width: 2rem;
+  color: #0b48549f;
+}
 .head {
   position: fixed;
   top: 0;
@@ -28,12 +41,12 @@
 }
 .head a div,
 .head a:after {
-  transition: transform 0.85s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 0.85s cubic-bezier(0.19, 1.5, 0.22, 1);
 }
 .head a:after {
   content: attr(data-txt);
   position: absolute;
-  top: 100%;
+  top: 110%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -44,7 +57,7 @@
 }
 .head a:hover div,
 .head a:hover:after {
-  transform: translateY(-100%);
+  transform: translateY(-90%);
 }
 
 .textshadow{
@@ -259,7 +272,7 @@ IMG - HEADER
     min-height: 50vh;
   }
   .container{
-    margin-top: 30rem;
+    margin-top: 10rem;
   }
   .uno{
   padding-bottom: 23rem;
